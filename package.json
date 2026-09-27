@@ -1,0 +1,21 @@
+{
+  "name": "parkwise-parking-management",
+  "version": "1.0.0",
+  "description": "ParkWise - a dynamic parking management system for CCA 2",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0"
+  }
+}
