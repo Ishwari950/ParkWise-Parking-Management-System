@@ -53,3 +53,12 @@ The Docker container checks the `/health` endpoint every 30 seconds to verify th
 - View parking records
 - Access parking data through `/api/parking`
 - Monitor application health through `/health`
+
+## Demo Workflow
+
+1. Open the live ParkWise application.
+2. Check available and occupied parking slots.
+3. Park a vehicle using the form.
+4. Release a parked vehicle.
+5. Verify the application health at /health.
+6. Check parking data through /api/parking.
