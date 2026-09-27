@@ -65,3 +65,27 @@ test("parking API returns JSON data", async () => {
   assert.ok(body);
   server.close();
 });
+
+test("release parked vehicle successfully", async () => {
+  await fetch(`${base}/park`, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      vehicleNumber: "MH12AB1234",
+      vehicleType: "Car",
+      ownerName: "Test User",
+      slot: "A-01"
+    })
+  });
+
+  const response = await fetch(`${base}/release`, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      vehicleNumber: "MH12AB1234"
+    })
+  });
+
+  assert.equal(response.status, 200);
+  server.close();
+});
