@@ -62,3 +62,7 @@ The Docker container checks the `/health` endpoint every 30 seconds to verify th
 4. Release a parked vehicle.
 5. Verify the application health at /health.
 6. Check parking data through /api/parking.
+
+## CI/CD Pipeline
+
+The project uses GitHub Actions to run linting and automated tests, build the Docker image, and deploy the application to Render after changes are pushed to the main branch.
