@@ -33,3 +33,11 @@ Git push → Lint → Test → Docker Build → Deploy → Live ParkWise
 
 ## Technology
 Node.js, Express, Git, GitHub, GitHub Actions, Docker, Render
+## Live Deployment
+
+ParkWise is deployed as a Docker-based web service on Render.
+
+- Live Application: https://parkwise-parking-management-system.onrender.com
+- Health Check: `/health`
+- API Endpoint: `/api/parking`
+- CI/CD: GitHub Actions
