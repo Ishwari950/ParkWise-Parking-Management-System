@@ -168,6 +168,7 @@ app.post("/release", (req, res) => {
   }
 
   record.status = "Released";
+  record.releasedAt = new Date().toLocaleString("en-IN");
   record.exitTime = new Date().toLocaleString("en-IN");
   return res.redirect("/");
 });
