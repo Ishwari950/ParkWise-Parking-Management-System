@@ -87,7 +87,7 @@ button:hover{opacity:.9}.danger{background:#dc2626;padding:8px 12px}.inline{disp
 </style>
 </head>
 <body>
-<header><div class="container"><h1>🚗 ParkWise</h1><div class="subtitle">Smart Parking Management System</div></div></header>
+<header><div class="container"><h1>🚗 ParkWise - Smart Parking Management System</h1><div class="subtitle">Smart Parking Management System</div></div></header>
 <main class="container">
 ${available.length < TOTAL_SLOTS ? `<div class="notice">Parking system is active. ${parked.length} vehicle(s) currently parked.</div>` : ""}
 <section class="cards">
