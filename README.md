@@ -41,3 +41,15 @@ ParkWise is deployed as a Docker-based web service on Render.
 - Health Check: `/health`
 - API Endpoint: `/api/parking`
 - CI/CD: GitHub Actions
+## Docker Health Check
+
+The Docker container checks the `/health` endpoint every 30 seconds to verify that the ParkWise application is running correctly.
+
+## Main Features
+
+- View total, available, and occupied parking slots
+- Park a vehicle with validated details
+- Release a parked vehicle
+- View parking records
+- Access parking data through `/api/parking`
+- Monitor application health through `/health`
