@@ -54,3 +54,14 @@ test("invalid parking data is rejected", async () => {
   assert.equal(response.status, 400);
   server.close();
 });
+
+test("parking API returns JSON data", async () => {
+  const response = await fetch(`${base}/api/parking`);
+
+  assert.equal(response.status, 200);
+
+  const body = await response.json();
+
+  assert.ok(body);
+  server.close();
+});
